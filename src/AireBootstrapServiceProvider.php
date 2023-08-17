@@ -147,10 +147,6 @@ class AireBootstrapServiceProvider extends ServiceProvider
             $input->attributes->registerMutator('class', function (ClassNames $classNames) use ($input) {
 
                 if ('file' === $input->attributes->get('type')) {
-                    $classNames
-                        ->remove('form-control')
-                        ->add('custom-file-input');
-
                     $input
                         ->groupAddClass('custom-file')
                         ->groupRemoveClass('form-group');
