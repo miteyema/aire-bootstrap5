@@ -45,7 +45,7 @@
       "Galahad\\AireBootstrap\\Tests\\": "tests/"
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "extra": {
     "laravel": {
       "providers": [
